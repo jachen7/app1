@@ -22,7 +22,7 @@ $myfile = fopen("log4.txt","w+") or die("Unable to open file!"); //設定一個l
 			$ch = curl_init($url);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 			curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-				'Authorization: Bearer GMMBMktIhFYWgjtBBnH1/XYkTtLrjaZoVJXIc00L9OBWrJ9mbnWc1Tz+e5WkUpKtsF8q9NuuYFiVxj9kMc8Wr68bhCEcL+mrNsfWiyrwKFpRUstrgMyIBBO2QGTFGu3VWUnp8iaJaQLgsPlSHaeSYwdB04t89/1O/w1cDnyilFU=',
+				'Authorization: Bearer LIcfcgaKb6VxKmUzOq0/I9tQIJPMxR2a4vQa4X4oI3PylSiIhTAc+YmxWwhvHWzSsF8q9NuuYFiVxj9kMc8Wr68bhCEcL+mrNsfWiyrwKFru+qYeN9deboRh1iOQ5WMUYcd78YXb7PyXXeWj8RFtLAdB04t89/1O/w1cDnyilFU=',
 			));
 				
 			$json_content = curl_exec($ch);
@@ -32,7 +32,7 @@ $imagefile = fopen($objID.".jpeg", "w+") or die("Unable to open file!"); //設�
 			fclose($imagefile);
  //回傳給line server
  $header[] = "Content-Type: application/json";
- $header[] = "Authorization: Bearer GMMBMktIhFYWgjtBBnH1/XYkTtLrjaZoVJXIc00L9OBWrJ9mbnWc1Tz+e5WkUpKtsF8q9NuuYFiVxj9kMc8Wr68bhCEcL+mrNsfWiyrwKFpRUstrgMyIBBO2QGTFGu3VWUnp8iaJaQLgsPlSHaeSYwdB04t89/1O/w1cDnyilFU=";
+ $header[] = "Authorization: Bearer LIcfcgaKb6VxKmUzOq0/I9tQIJPMxR2a4vQa4X4oI3PylSiIhTAc+YmxWwhvHWzSsF8q9NuuYFiVxj9kMc8Wr68bhCEcL+mrNsfWiyrwKFru+qYeN9deboRh1iOQ5WMUYcd78YXb7PyXXeWj8RFtLAdB04t89/1O/w1cDnyilFU=";
  $ch = curl_init($line_server_url);                                                                      
  curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
  curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($response));                                                                  
