@@ -26,7 +26,7 @@
  //回傳給line server
  $header[] = "Content-Type: application/json";
  $header[] = "Authorization: Bearer LIcfcgaKb6VxKmUzOq0/I9tQIJPMxR2a4vQa4X4oI3PylSiIhTAc+YmxWwhvHWzSsF8q9NuuYFiVxj9kMc8Wr68bhCEcL+mrNsfWiyrwKFru+qYeN9deboRh1iOQ5WMUYcd78YXb7PyXXeWj8RFtLAdB04t89/1O/w1cDnyilFU=";
- $ch = curl_init("https://api.line.me/v2/bot/message/push");                                                                      
+ $ch = curl_init("https://api.line.me/v2/bot/message/reply");                                                                      
  curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
  curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($response));                                                                  
  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
