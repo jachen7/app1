@@ -6,4 +6,5 @@
   $myfile=fopen("log.txt","w+") or die("unable to open file!"); //log.txt接收訊息
   fwrite($myfile, "\xEF\xBB\xBf".$json_str);
   fclose($myfile);
+
 ?>
